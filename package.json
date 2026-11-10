@@ -1,17 +1,43 @@
 {
-  "name": "open-dropped-folder",
-  "displayName": "Open Dropped Folder",
-  "description": "Open a folder dropped into the window in the current window.",
+  "name": "open-folder-in-new-window",
+  "displayName": "Open Folder in New Window",
+  "description": "Open a folder in a new window from the Explorer context menu.",
   "version": "0.0.1",
   "publisher": "tnotesjs",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tnotesjs/open-folder-in-new-window"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": ["Other"],
-  "keywords": ["folder", "workspace", "drag-and-drop", "window"],
-  "activationEvents": ["onStartupFinished"],
+  "keywords": ["folder", "workspace", "window", "explorer"],
   "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "open-folder-in-new-window.open",
+        "title": "在新窗口中打开"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "open-folder-in-new-window.open",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@20"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "open-folder-in-new-window.open",
+          "when": "false"
+        }
+      ]
+    }
+  },
   "scripts": {
     "package": "vsce package --no-dependencies"
   },

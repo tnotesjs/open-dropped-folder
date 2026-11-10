@@ -1,10 +1,8 @@
-# Open Dropped Folder
+# Open Folder in New Window
 
-把文件夹拖进编辑器时，直接用当前窗口打开它。
+在资源管理器里右键文件夹，选择 **在新窗口中打开**，用一个新窗口打开这个文件夹。当前窗口保持不变。
 
-从 Finder 拖入文件夹时，VS Code 会先把它当成文件，并显示 “The file is not displayed in the text editor because it is a directory.”。这个扩展发现该标签是文件夹后，会在当前窗口打开这个文件夹，不再需要点击 **Open Folder**。
-
-扩展 id：`tnotesjs.open-dropped-folder`。
+扩展 id：`tnotesjs.open-folder-in-new-window`。
 
 ```bash
 npm install
