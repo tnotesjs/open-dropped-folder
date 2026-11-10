@@ -1,0 +1,21 @@
+{
+  "name": "open-dropped-folder",
+  "displayName": "Open Dropped Folder",
+  "description": "Open a folder dropped into the window in the current window.",
+  "version": "0.0.1",
+  "publisher": "tnotesjs",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["folder", "workspace", "drag-and-drop", "window"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "scripts": {
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.2"
+  }
+}
