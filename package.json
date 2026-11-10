@@ -1,5 +1,5 @@
 {
-  "name": "open-folder-in-new-window",
+  "name": "tnotesjs-open-folder-in-new-window",
   "displayName": "Open Folder in New Window",
   "description": "Open a folder in a new window from the Explorer context menu.",
   "version": "0.0.1",

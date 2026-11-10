@@ -10,7 +10,7 @@ async function openInNewWindow(uri) {
       return;
     }
   } catch (error) {
-    console.error("[open-folder-in-new-window]", error);
+    console.error("[tnotesjs-open-folder-in-new-window]", error);
     return;
   }
   await vscode.commands.executeCommand("vscode.openFolder", uri, {
